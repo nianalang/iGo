@@ -1,0 +1,21 @@
+/*页脚*/
+	.footer{       /*页脚*/
+    	margin: 0 auto;
+    	text-align: center;
+    	display: block;	
+  		margin-top: 20px; 
+    	background-color: #f4f4f4;
+		height: 30px;
+		border-top:solid 1px #e5e5e5;
+		font-size: 13px;
+		z-index:0px;
+	}
+	.footers{
+		text-align: center;
+		background-color: #f4f4f4;
+    	margin-left: 0;
+    	color: #666;
+    	line-height: 22px;
+    	position: relative;
+    	top: 3px;
+	}

@@ -1,0 +1,255 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	height: 100%;
+	background-color: #f9f9f9;
+	overflow: visible;
+}
+a:link{
+	text-decoration: none;
+}
+ul,li,p{ 
+ 	margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+	 
+.box{
+ 	width:800px;
+ 	height:600px;
+ 	position:absolute;
+ 	border:1px solid #999;
+ 	border-top:0px solid #000;
+ 	margin-left:280px;
+ 	margin-top:20px;
+ }
+ .boxTop{
+ 	width:801px;
+ 	height:40px;
+ 	border-left:0px;
+ 	border-bottom:3px solid #f40;
+ 	background-color:#efefef;
+ }
+ 
+ .boxTop_pingjia{
+ 	display:inline-block;
+ 	width:150px;
+ 	height:40px;
+ 	background-color:#f40;
+ 	text-align:center;
+ 	font-size:16px;
+ 	font-family:"宋体";
+ 	color:#fff;
+ }
+  .boxTop_pingjia span{
+  	display:inline-block;
+  	margin-top:12px;
+  }
+ 
+ 
+ 
+ /* 中间div */
+ .boxCenter{
+ 	width:800px;
+ 	height:290px;
+ 	border-bottom:1px dotted #999;
+ }
+ .boxCenter_inf{
+ 	width:130px;
+ 	height:200px;
+ 	/* border:1px solid #000; */
+ 	margin-left:100px;
+ 	margin-top:56px;
+ }
+  .boxCenter_brief{
+ 	/* border:1px solid #000; */
+ 	width:130px;
+ 	height:58px;
+ 	padding-top:12px;
+ 	font-size:13px;
+ 	color:#545454;
+ 	font-family:"宋体";
+ 	letter-spacing:1px;
+ 	line-height:15px;
+ }
+
+ .boxCenter_brief:hover{
+ 	cursor:pointer;
+ 	color:#ff0000;
+ }
+ .boxCenter_image{
+ 	width:130px;
+ 	height:130px;
+ }
+ 
+ /* 评价（花） */
+ .boxCenter_flower{
+ 	/* border:1px solid #000; */
+ 	width:370px;
+ 	height:40px;
+ 	position:absolute;
+ 	margin-left:340px;
+ 	margin-top:-210px;
+ }
+ .boxCenter_flower_ul{
+ 	text-decoration:none;
+ 	display:inline-block;
+ 	width:370px;
+ 	height:35px;
+ /* 	line-height:35px; */
+ }
+ .boxCenter_flower_li{
+ 	display:inline-block;
+ /* 	border:1px solid #000; */
+ 	width:75px;
+ 	height:40px;
+ }
+ .flower_li2, .flower_li3{
+ 	margin-left:60px;
+ }
+.boxCenter_flower_li img{
+ 	display:inline-block;
+ 	position:absolute;
+ 	margin-left:20px;
+ 	width:23px;
+ 	height:23px;
+ 	margin-top:8px;
+ }
+ .boxCenter_flower_li img:hover{
+ 	cursor:pointer;
+ }
+ .boxCenter_flower_li span{
+ 	font-size:13px;
+ 	color:#ff0000;
+ 	font-family:"宋体";
+ 	position:absolute;
+	margin-left:47px;
+	/* border:1px solid #000; */
+	margin-top:13px;
+	display:inline-block;
+	visibility:hidden;/*visible  hidden*/
+ }
+
+.boxCenter_flower_li input{
+ 	position:absolute;
+ 	margin-top:13px;
+ 	width:16px;
+ 	height:16px;
+ }
+/* 详细信息 */
+.boxCenter_msg{
+	position:absolute;
+	border:1px solid #DAF1FC;
+	width:410px;
+	height:185px;
+	margin-left:290px;
+	margin-top:-150px;
+    padding: 3px;
+    background: #EEF8FD;
+    zoom: 1;
+}
+.boxCenter_msg p{
+	font-size:14px;
+	font-family:"宋体";
+	margin:4px 0;
+}
+.boxCenter_msg_detail{
+	padding:14px;
+    width: 380px;
+    border: 1px solid #CCC;
+    height: 128px;
+    outline: 0;
+    resize: none;
+    font-size:14px;
+    background-color: white;
+    rtl-ordering: logical;
+    flex-direction: column;
+    display: inline-block;
+}
+/*底部*/
+.boxBottom_box{
+	width:100px;
+	height:60px;
+	line-height:60px;
+	background-color:#f3f3f3;
+	font-size:13px;
+	color:#999;
+	font-weight:bold;
+	margin-left:130px;
+	margin-top:50px;
+}
+
+/*评分*/
+/* .score{
+  margin:20px auto;
+  width:600px;
+}
+.score .default-statu{
+  height: 47px;
+  width:251px;
+  float: left;
+}
+.score-expression,.score-praise,.score-heart,.score-star,.score-medal,
+.score-water,.score-crown,.score-flower{
+  overflow: hidden;
+}
+.score .default-statu .default-icon{
+  background-image: url('images/icon.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  display: inline-block;
+  height: 47px;
+  width:50.16px;
+  cursor: pointer;
+}
+.score-expression .default-statu .default-icon{
+  background-position: top right;
+}
+.score-description{
+  width:249px;
+  height: 47px;
+  line-height: 47px;
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+} */
+
+/*返回*/
+.return{
+	width:130px;
+	height:40px;
+	background-color:#3498db;
+	display: inline-block;
+	border-radius:5px; 
+ 	margin-left:400px;
+	border:1px;	
+	font-family:"宋体";
+	color:#fff;
+	font-size:13px;
+	text-align: center;
+	line-height:40px;
+}
+.return:hover{
+	opacity:0.8;
+	cursor:pointer;
+}
+/*发表评论*/
+.submit{
+	background-color:#3498db;
+	width:130px;
+	height:40px;
+	border:1px;
+	border-radius:5px;
+	position:relative;
+	left:50px;
+	margin-top:35px;
+	font-family:"宋体";
+	color:#fff;
+	display: inline-block;
+}
+.submit:hover{
+	opacity:0.8;
+	cursor:pointer;
+}

@@ -1,0 +1,137 @@
+/* 设置body的整体布局 */
+body{
+	width: 100%;
+	height: 100%;
+}
+/*  登录首页文字设置*/
+.head  marquee{
+	float: right;
+	width:800px;
+	position: absolute;
+	right: 200px;
+	font-size:24px;
+	margin-top:40px;
+	background-color: #FEF2F2;
+	letter-spacing: 10px;
+	direction:left;
+}
+/* 设置图片显示的大小*/
+.container{
+	width:1347px;
+	height:500px;
+	background-image: url("../images/bk.jpg");
+	background-repeat: no-repeat;
+	background-attachment:local;
+	background-size: auto;
+}
+/*设置登录显示的位置  */
+.login-div{
+	position:absolute;
+	background-color: #F0E6E6;
+	width: 350px;
+	height: 345px;
+	top:210px;
+	left: 870px;
+}
+/*设置用户名登陆的字体  */
+.login-div p{
+	font-weight: bold;
+	font-size: 24px;
+	margin-left: 27px;
+}
+/*设置用户名登陆输入框的效果  */
+.login{
+	margin-top: 30px;
+	margin-left: 27px;
+	margin-right: 10px;
+}
+/* 设置用户名字体的样式*/
+.login div{
+	width: 60px;
+	height:40px;
+	font-size: 18px;
+	color: white;
+	float:left;
+	background-color: #94B6ED;
+} 
+/* 设置用户名字体的样式定位*/
+.login span{
+	position:relative;
+	top:5px;
+	left: 2px;
+}
+.login input{
+	width: 240px;
+	height:34px;
+}  
+
+/*设置用户名登陆输入框的效果  */
+.passwd{
+	margin-top: 20px;
+	margin-left: 27px;
+	margin-right: 10px;
+}
+/* 设置用户名字体的样式*/
+.passwd div{
+	width: 60px;
+	height:40px;
+	font-size: 18px;
+	color: white;
+	float:left;
+	background-color: #94B6ED;
+} 
+/* 设置用户名字体的样式定位*/
+.passwd span{
+	position:relative;
+	top:5px;
+	left: 2px;
+}
+.passwd input{
+	width: 240px;
+	height:34px;
+}  
+/*登录按钮 */
+.submit{
+	margin-top: 20px;
+	margin-left: 27px;
+	margin-right: 10px;
+}
+/* 设置提交按钮的样式 */
+.submit  input{
+	width: 305px;
+	height:34px;
+  	background-color: #F52B00;
+	border: 1px solid #F52B00;
+	font-size: 20px;
+	font-weight:bold;
+	color: white;
+} 
+
+/* 忘记密码和注册部分*/
+.foregister{
+	text-align: center;
+    word-spacing: 10px;
+    height: 30px;
+    line-height: 30px; /* 设置内容垂直居中 */
+}
+/* 设置ul显示的位置*/
+.faceul{
+	margin-top:20px;
+	position: absolute;
+	 list-style-type: none;
+	 left:200px;
+}
+/* 将li设为行内元素 */
+.faceul  li{
+	display: inline-block;
+}
+.faceul  li a{
+	font-size:14px;
+	 line-height:30px;
+	 color: #6C6C6C;
+     text-decoration: none;
+}
+/*当鼠标悬停时的颜色 */
+.faceul a:HOVER {
+    color: #FF4400;
+}

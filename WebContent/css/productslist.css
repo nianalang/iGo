@@ -1,0 +1,81 @@
+
+/*设置整体的布局样式，包括背景颜色*/
+body{
+    height: 100%;
+   background-color: #f9f9f9;
+    -webkit-background-size: cover;/*兼容webkit内核浏览器*/
+    -o-background-size: cover;/*Opera*/
+}
+/*第一行的div显示位置*/
+#products-first,#products-second{
+    height: 370px;
+    width: 1200px;
+}
+.products{
+    margin-left: 80px;
+}
+/*div里的ul相对于父div的位置*/
+#faceul-first,#faceul-second{
+    display: inline-block;
+    list-style-type: none;
+}
+/*ul里的li相对于父ul的位置*/
+#faceul-first li,#faceul-second li{
+    display: inline-block;
+    height: 350px;
+    width: 230px;
+}
+/*li里的img相对于父li的位置*/
+#faceul-first img,#faceul-second img{
+    height: 230px;
+    width: 230px;
+}
+.imgsize{
+    box-shadow: 0px 0px 2px #666;
+    /*border:1px solid;*/
+}
+
+/*设置价格字体和颜色*/
+.proPrice{
+    color: red;
+    font-weight: bold;
+}
+/*设置介绍的内容的样式*/
+.proName{
+    font-size: 12px;
+}
+.proName a{
+	color:#545454;
+	text-decoration:none;
+}
+.proName  a:hover{
+    color: red;
+}
+/*加入购物车样式*/
+.shoppingCart{
+    width: 166px;
+    height: 30px;
+    
+    margin-top:10px;
+}
+#numberinput{
+	width: 60px;
+    height:30px;
+}
+	#addCart{
+	margin-left:10px;
+	width:80px;
+	height:35px;
+	background:#ff5555;
+	color:#fff;	
+	border:0px;
+	
+}
+	#addCart:hover{
+	color:#ff0000;
+	background:#ff0000;
+	opacity:0.8;
+	color:#fff;
+	cursor:pointer;
+}
+

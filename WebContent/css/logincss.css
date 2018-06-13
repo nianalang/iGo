@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding:0px;
+   
+}
+
+body{
+     background-image: url("../images/banner.jpg");
+     background-repeat: no-repeat;
+    background-size: 100% auto; 
+}
+
+/*右上角按钮部分*/
+.button{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding-left: 1100px;
+    margin-top: 40px;
+    /*border: 1px solid #000;*/
+}
+
+/*右上角登陆按钮*/
+.active{
+    display: inline-block;
+    /*位置大小-----开始*/
+    padding: 9px 26px;
+    transition: 0.3s all;
+    /*margin: 14px 14px 0px 0px;*/
+    /*位置大小-----结束*/
+    font-size:13px;
+    color: #fff;
+    background: #df5799;/*粉色背景*/
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+/*右上角注册按钮*/
+.button #right{
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s all;/**/
+    border: 1px solid #fff;/*边框颜色为白*/
+    padding: 9px 26px;
+    margin-left: 20px;
+}
+
+#right a:link{
+    border: 1px solid #fff;
+    background: #0097be;/*蓝色背景*/
+}
+.active a:visted{
+    border: 1px solid #fff;
+    background: #df5799;/*蓝色背景*/
+}
+/*中间最大的框*/
+.main{
+    /*border: 1px solid #ff0000;*/
+    width: 460px;
+    height: 450px;
+    margin-right: auto;/*居中*/
+    margin-left: auto;
+    text-align: center;
+    margin-top: -20px;
+}
+/*第二层div*/
+.box{
+    background: #666;
+    width: 470px;
+    height: 330px;
+    margin-top: 10px;
+    background: rgba(41, 39, 39, 0.46);/*设置透明度0.46*/
+    box-shadow: 0px 35px 44px -22px #1f181b;/*设置边框下方的阴影*/
+}
+
+
+/*引入字体*/
+@font-face{
+    /* font-properties */
+    font-family: "fonts";
+    src:url("../fonts/fontawesome-webfont.woff"),  
+    url("../fonts/fontawesome-webfont.ttf"),
+    url("../fonts/fontawesome-webfont.svg"),
+    url("../fonts/fontawesome-webfont.eot"); /* IE9 */
+}
+.main h1{
+    font-size: 91px;
+    color: #fff;
+    font-family:"fonts";
+}
+/*input标签样式*/
+.tag{
+    color: #fff;
+    font-size: 14px;
+    width: 330px;
+     height: 35px;
+     margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 20px;
+    /*只留下底边边框并设置颜色*/
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-color: #889ba0;
+    outline:none;/*选中时无样式*/
+    background-color:transparent;/*背景透明*/
+}
+input::-webkit-input-placeholder {
+    color:   #fff;
+}
+input[name=confirm]{
+    width: 167px;
+    height: 40px;
+    display: block;
+    margin-left: 70px;
+    float: left;
+    margin-bottom: 39px;
+    margin-top: 35px;
+}
+/*右侧验证码大小*/
+.box img{
+    width: 139px;
+    height: 50px;
+    margin-top: 28px;
+    margin-right:36px; 
+    
+}
+/*下方登陆按钮*/
+.click-login input{
+    width: 330px;
+    height: 40px;
+    outline: none;
+    margin-left:70px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    display: block;
+    letter-spacing: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all;
+}
+.click-login input:hover {
+    background: #df5799;
+    color: #ffffff;
+    transition:all;/*设置过渡样式*/
+    outline: none;
+}
+/*底部文字“注册”*/
+.click-register{
+    font-size: 14px;
+    color: #eee;
+    margin-top: 16px;
+    text-align: center;
+    /*text-transform: none;*/
+    letter-spacing: 1px;
+}
+.click-register a{
+    color: #df5799;
+    outline: none;
+    text-decoration: none;
+    margin-right: 8px;
+    font-weight: bold;
+}

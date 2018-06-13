@@ -1,0 +1,170 @@
+
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	body{
+		height: 100%;
+	}
+	ul,li,p{ 
+	 
+	    list-style: none;
+	 }
+	/*头部样式*/
+	.header{
+		position: relative;
+		height: 90px;
+		background-color: #AEC7E1;
+	}
+		/*头部logo样式*/
+	.header_logo{
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin-top: 23px;
+		margin-left: 50px;
+	}
+	/*搜索框样式*/
+	.search{
+		float: right;
+	    margin-top: 32px;
+		margin-right: 10px;
+	}
+	.search_text{
+		width: 190px;
+		height: 25px;
+		background-color: #FFFFFF;
+		padding-right: 25px;
+		border:1px solid #FFFFFF;
+	}
+/*内容区的样式*/
+	.list_main{
+		top:20px;
+		height:520px;
+		background-color:#f4f4f4;
+		position: relative;
+	}
+		/*左边内容区的样式*/
+	.list_left{
+		background-color: #FFFFFF;
+		width:165px;
+		height: 450px;
+		margin-left:85px;
+		position: absolute;
+		border: 1px solid #ccc;	
+	}
+	/*右边内容区的样式*/
+	.aaa{
+		margin-top: 40px;
+		margin-left: 10px;
+		color: #666;
+		font-size: 22px;
+	}
+	.aaaa{
+		margin-top: 45px;
+		margin-left: 10px;
+		color: #666;
+		font-size: 22px;
+	}
+	.my_title{
+		height:20px;
+	}
+	.bbb{
+		margin-left: 30px;
+	    margin-top: 20px;
+	}
+	
+	
+	.list_right{
+		background-color: #f4f4f4;
+		width: 1000px;
+		height: 500px;
+		display: inline-block;
+		margin-left:255px;
+		margin-bottom:80px;
+		/* border: 1px solid red; */
+	}
+	/* 个人信息 */
+	.list_right_ul2{
+		height:450px;
+		width:1000px;
+		border:1px solid #ccc;
+		position:absolute;
+		top:0px;
+		/* display:none; */
+		background-color:#fff;
+		visibility:visible;
+	}
+	.list_right_inf{
+		width:400px;
+		height:400px;
+		/* border:1px solid #000; */
+		margin-left:400px;
+		margin-top:23px;
+	}
+	.list_right_p{
+		color:#545454;
+		/* border:1px solid #000; */
+		height:30px;
+		line-height:30px;
+		margin-top:40px;
+		font-size:18px;
+		margin-left:20px;
+		font-family:"宋体";
+	}
+	.list_right_p2{
+		margin-top:55px;
+	}
+	.list_right_p3{
+		margin-top:60px;
+	}
+	 .list{
+		color: #999;
+		font-size:16px;
+	} 
+	.list:hover{
+		cursor:pointer;
+	}
+	.list2{
+		color:#ff0000;
+	}
+	a{
+		text-decoration:none;
+		color:#999;
+	}
+	#inf a{
+		color:#ff0000;
+	}
+	.inf_img_user{
+		width:30px;
+		height:30px;
+		display:inline-block;
+		position:absolute;
+		top:120px;
+		left:380px;
+	}
+	.inf_img_password{
+		width:30px;
+		height:30px;
+		display:inline-block;
+		position:absolute;
+		left:380px;
+		top:207px;
+	}
+	.inf_img_email{
+		width:30px;
+		height:30px;
+		
+		display:inline-block;
+		position:absolute;
+		left:380px;
+		top:295px;
+	}
+	.my_inf{
+		margin-top:50px;
+		margin-left:45px;
+		font-weight:normal;
+		letter-spacing:5px;
+	}
+	
+	

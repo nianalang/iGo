@@ -1,0 +1,97 @@
+*{
+		padding: 0px;
+		margin: 0px;
+	}
+	body{
+		/*height: 100%;*/
+		/*width: 100%;*/
+		background-color: #f9f9f9;
+		/*overflow: hidden;*/
+	}
+
+	a:{
+		color:#545454;
+		text-decoration: none;
+	}
+	ul,li,p{ 
+	 	margin: 0;
+	    padding: 0;
+	    list-style: none;
+	 }
+
+/*顶部信息栏*/
+	#topbar{
+		background-color: #f4f4f4;
+		height: 35px;
+		line-height: 35px;
+		border-bottom:solid 1px #e5e5e5;
+		text-align: right;
+		position:relative;
+		word-spacing: 10px;
+		/*z-index: 3000;*/
+		padding-right: 48px;
+		width: 1300px;
+		min-width: 1300px;
+	}
+	#topbox{
+		word-spacing: 20px;
+		font-family: "微软雅黑";
+		font-size: 13px;
+		color: #666;
+	}
+/*顶部信息栏各种样式*/
+/*“登陆”样式为红色*/
+	
+	#register,#cart{
+		color: #666;
+	}
+/*鼠标划过“注册”时的样式*/
+	#register:hover{
+		cursor: pointer;
+		color: #ff0000;
+	}
+/*顶部信息栏*/
+    #topbar{
+        background-color: #f4f4f4;
+        height: 35px;
+        line-height: 35px;
+        border-bottom:solid 1px #e5e5e5;
+        word-spacing: 10px;
+        /*z-index: 3000;*/
+        width: 1300px;
+        min-width: 1300px;
+    }
+    #topbar span{
+        font-family: "微软雅黑";
+        font-size: 13px;
+        color: #666;
+        letter-spacing: 1px;
+    }
+    #index{
+        margin-left: 40px;
+        margin-right: 870px;
+    }
+    #topbar a{
+        text-decoration: none;
+    }
+    #topbar a:hover{
+        color: #ff0000;
+    }
+    #index img{
+        width: 14px;
+        height: 13px;
+        margin-right: 3px;
+    }
+    #topbox{
+        word-spacing: 20px;
+    }
+
+
+/*我的购物车*/
+    #cart a{
+        text-decoration: none;
+        color: #666;
+    }
+    #cart a:hover{
+        color: #ff0000;
+    }

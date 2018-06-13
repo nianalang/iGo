@@ -1,0 +1,461 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    }
+body{
+    background-color: #f9f9f9;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    
+}
+ul,li{
+    list-style-type: none;
+}
+/*搜索栏及logo部分*/
+    .cart_all{
+        width:1300px;
+        min-width: 1300px;
+        height: 80px;
+    }
+/*图标外的框*/
+    .cart_logo{
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        width: 180px;
+        margin-left: 75px;
+        margin-top: 14px;
+    }
+
+/*图标后的购物车文字*/
+    .cart_logo a{
+        font-family: "幼圆";
+        font-size: 28px;
+        font-weight: bold;
+        color: #000;
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+    .cart_logo a:hover{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .cart_input{
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        width: 300px;
+        margin-left: 764px;
+        position: absolute;
+        margin-top:20px;
+    }
+    .cart_input input{
+        display: inline-block;
+        height: 30px;
+        width: 230px;
+        color: #666;
+        outline: none;
+    }
+    .cart_input img{
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 7px;
+    }
+
+
+
+/*选择框的样式*/
+    #all{
+        position: absolute;
+        display: inline-block;
+        margin-left: 13px;
+        margin-top: 13px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+    .son_check{
+        position: absolute;
+        display: inline-block;
+        margin-left: 28px;
+        margin-top: 50px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+/*全选和前面的全选框*/
+    .list_chk{
+        position: absolute;
+        width: 80px;
+        display: inline-block;
+    }
+    .list_chk span{
+        margin-left: 40px;
+    }
+    .cartMain{
+        position: absolute;
+        width: 1138px;
+        min-width: 1138px;
+        max-width: 1138px;
+        margin-left: 115px;
+        margin-top: 12px;
+        margin-bottom: 60px;
+        min-height: 210px;
+        /*border: 1px solid #000;*/
+        height: 696px;
+    }
+
+
+/*购物车头部*/
+    .cartMain_hd{
+        padding-left: 14px;
+        height: 40px;
+        width: 1122px;
+        line-height: 40px;
+        border: 1px solid #dfdfdf;
+        border-radius: 5px;
+        background: #fff;
+        color: #666;
+        display: inline-block;
+        position: absolute;
+        margin-bottom: 10px;
+    }
+/*定位列表头部信息分类的ul id*/
+    #orderCart{
+        height: 40px;
+        border: 0px;
+        width: 1111px;
+    }
+/*第一个ul的id*/
+    /* #cartTop */
+    .order_lists:first-child{
+        border-top:1px solid #e7e7e7;
+    }
+
+
+/*包含每个ul外框的大框*/
+    .cartBox{
+        margin-top: 70px;
+        margin-bottom: 150px;
+    }
+
+/*商品列表*/
+    .cartBox .order_content a{
+        display: block;
+    }
+    .order_lists{
+        width: 1136px;
+        height: 120px;
+        border: 1px solid #e7e7e7;
+        background-color: #fff;
+    }
+/*让每一列向左浮动*/
+    .order_lists li{
+        float: left;
+    }
+
+
+/*头部*/
+/*list_con是商品信息的图片列*/
+    .list_con{
+        width: 342px;
+        margin-left: 65px;
+    }
+    .list_con span{
+        display: inline-block;
+        margin-left: 115px;
+    }
+    .list_con .list_img{
+        width: 90px;
+        height: 90px;
+        margin-top: 15px;
+        margin-right: 30px;
+        float: left;
+    }
+    .list_con .list_img img{
+        width: 100%;
+        vertical-align: top;
+    }
+
+/*商品信息列*/
+    .list_text{
+        margin: 50px 0 0 10px;
+        line-height: 18px;
+        width: 200px;
+        float: left;
+    }
+    .list_text  a{
+        color: #666;
+        font-size: 13px;
+      
+    }
+    .list_text a:hover{
+        color: #ff5e5e;
+    }
+
+/*单价列*/
+    .list_price{
+        width: 140px;
+    }
+    .list_price span{
+        display: inline-block;
+        /*border: 1px solid #000;*/
+        margin-left: 100px;
+        width: 60px;
+    }
+    .list_price .price{
+        margin-top: 50px;
+        margin-left: 120px;
+        line-height: 18px;
+        font-size: 13px;
+        color: #666;
+        /*font-weight: bold;*/
+    }
+
+/*数量列*/
+    .list_amount{
+        width: 120px;
+    }
+
+    .list_amount span{
+        display: inline-block;
+        margin-left: 140px;
+        width: 60px;
+    }
+    .list_amount .amount_box{
+        margin-top: 50px;
+        width: 77px;
+        height: 25px;
+        position: relative;
+        margin-left: 140px;
+    }
+    .list_amount .amount_box input{
+        width: 39px;
+        height: 15px;
+        line-height: 15px;
+        border: 1px solid #aaa;
+        color: #343434;
+        text-align: center;
+        padding: 4px 0;
+        background-color: #fff;
+        position: absolute;
+        left: 18px;
+        float: left;
+    }
+    .list_amount .amount_box a{
+        float: left;
+        height: 23px;
+        width: 17px;
+        border: 1px solid #e5e5e5;
+        background: #f0f0f0;
+        text-align: center;
+        line-height: 23px;
+        color: #444;
+        position: absolute;
+        top:0;
+    }
+    .amount_box a:hover{
+        border-color: #ff5e5e;
+        text-decoration: none;
+        color: #666;
+    }
+    .amount_box .reduce{
+        left: 0;
+    }
+
+/*减号*/
+    .amount_box .reduce{
+        color: #cbcbcb;
+    }
+    .amount_box .reduce:hover{
+        border-right: none;
+        border-color: #e5e5e5;
+        text-decoration: none;
+    }
+    .list_amount .amount_box .plus{
+        right: 0;
+    }
+
+
+/*价格小计*/
+    .list_sum{
+        width: 170px;
+    }
+    .list_sum span{
+        display: inline-block;
+        margin-left: 180px;
+        width: 60px;
+    }
+    .list_sum .sum_price{
+        line-height: 18px;
+        margin-top: 50px;
+        margin-left: 200px;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+/*删除操作*/
+    .list_op span{
+        display: inline-block;
+        margin-left: 195px;
+        width: 30px;
+    }
+    .list_op .del{
+        margin-top: 50px;
+        line-height: 18px;
+        margin-left: 210px;
+        width: 25px;
+        /*border: 1px solid #000;*/
+    }
+/*移除商品*/
+    .delBtn img{
+        /*border: 1px solid #000;*/
+        width: 19px;
+        height: 19px;
+    }
+/*底部总计算价*/
+    .bar-wrapper{
+        width: 84.2%;
+        height: 50px;
+        position: fixed;
+        bottom: 0px;
+        z-index: 99;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+    .bar-wrapper .bar-right{
+        float: right;
+        color: #333;
+    }
+    .bar-right strong{
+        color: #ff5e5e;
+    }
+
+    .bar-right .piece{
+        float: left;
+        min-width: 110px;
+        margin-right: 20px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+    .piece .piece_num{
+        display: inline-block;
+        padding: 0 10px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .bar-wrapper .bar-right .totalMoney{
+        float: left;
+        min-width: 100px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .bar-wrapper .bar-right .totalMoney .total_text{
+        float: right;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: Arial;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-left: 15px;
+    }
+    .calBtn{
+        float: left;
+    }
+   .calBtn input{
+    width: 120px;
+    height: 52px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-align: center;
+    border:0px;
+    }
+/*结算按钮被触发时增加的样式*/
+    .btn_sty{
+        background: #ff5e5e;
+        cursor: pointer;
+    }
+
+
+
+/*自己定义的模态框*/
+    .model_bg{
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #ccc;
+        opacity:0.6;
+        z-index: 999;
+        display: none;
+    }
+    .my_model{
+        position: fixed;
+        display: none;
+        top:50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -200px;
+        z-index: 9999;
+        width: 360px;
+        height: 120px;
+        border: 1px solid #aeaeae;
+        border-radius: 3px;
+        padding: 20px;
+        background: #fff;
+    }
+    .my_model .title{
+        font-size: 14px;
+        color: #3c3c3c;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .my_model .title .closeModel{
+        float: right;
+        cursor: pointer;
+    }
+    .my_model p{
+        line-height:16px;
+    }
+    .my_model .opBtn{
+        margin-top: 20px;
+    }
+    .my_model .opBtn a{
+        width: 58px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        -webkit-border-radius: 1px;
+       /* -moz-border-radius: 1px;
+        -ms-border-radius: 1px;*/
+        border-radius: 1px;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: 700;
+    }
+    .my_model .dialog-sure{
+        background: #52a0e5;
+        color: #fff;
+        border: 1px solid #52a0e5;
+    }
+
+    .my_model .dialog-close{
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        color: #3c3c3c;
+    }

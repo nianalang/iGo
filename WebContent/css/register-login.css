@@ -1,0 +1,242 @@
+/*整个网页*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+		html,body{
+			height: 100%;
+			width: 100%;
+			font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+			color: #555;
+    		font-size: 15px;
+    		line-height: 1.7;
+		}
+		input:focus{        /*设置字段获得焦点时样式为：围绕元素无轮廓*/
+			outline: none;
+		}
+		canvas{            /*canvas在网页上绘制图形，设置显示、垂直对齐的样式 */
+  			display:block;
+  			vertical-align:bottom;
+		}
+		#box{           /*设置box选择器的样式*/
+			width: 100%;
+  			height: 100%;
+  			background-color: #F7FAFC;
+  			background-image: url('');
+  			background-size: cover;
+  			background-position: 50% 50%;
+  			background-repeat: no-repeat;
+  			position: fixed;
+  			top: 0;
+  			left: 0;
+  			right: 0;
+  			bottom: 0;
+  			z-index: 1;
+		}
+		.cent-box{
+			width: 300px;
+			height: 440px;
+			vertical-align: middle;
+			white-space: normal;
+			margin: 0 auto;
+			position: absolute;
+			z-index: 2;
+			left: 50%;
+			top: 50%;
+			margin-left: -150px;
+			margin-top: -220px;
+		}
+		.register-box{    /*注册页面的盒模型*/
+			height: 490px;
+			margin-top: -270px;
+		}
+		.cent-box-header{            /*头部*/
+			text-align: center;
+		}
+		.hide{                   /*隐藏元素*/
+			font: 0/0 a;
+			color: transparent;  /*设置隐藏元素透明*/
+			text-shadow: none;
+			background-color: transparent;
+			border: 0;
+		}
+		.cent-box-header .main-title{   /*logo*/
+			width: 200px;
+			height: 100px;
+			margin: 0 auto;    /*水平居中*/
+			margin-right: 23px;
+			background: url('../images/logo1.png') no-repeat;
+			background-size: contain;
+		}
+		.cent-box-header .sub-title{      /*标语*/
+			margin: 30px 0 20px;
+    		font-weight: 400;
+    		font-size: 18px;
+    		line-height: 1;
+		}
+		.clearfix:before{
+			content: '';
+			display: table;
+		}
+		.index-tab{                    /*索引（ 登录 注册 ）*/
+			text-align: center;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		.index-tab .index-slide-nav{          /*生成一个行内框*/
+			display: inline-block;
+			position: relative;
+		}
+		.index-tab .index-slide-nav a{
+			float: left;
+			width: 4em;
+			line-height: 35px;
+			opacity: 0.7;
+			-webkit-transition: opacity .15s,color .15s;
+    		transition: opacity .15s,color .15s;
+    		color: #555;
+		}
+		.index-tab .index-slide-nav a:hover{     /*选择鼠标在链接上面时的样式*/
+			color: #0f88eb;
+			opacity: 1;
+		}
+		.index-tab .index-slide-nav a.active{     /*选择活动链接时的样式*/
+			opacity: 1;
+			color: #0f88eb;
+		}
+		.slide-bar{                    /*登录 注册 滑动条*/
+			position: absolute;
+    		left: 0;
+    		bottom: 0;
+    		margin: 0 .8em;
+    		width: 2.4em;
+    		height: 2px;
+    		background: #0f88eb;
+		}
+		.slide-bar1{        /*注册滑动条*/
+			left: 4em;
+		}
+		.form{                  /*表单*/
+			float: none;
+			margin: auto;
+			text-align: left;
+			width: 300px;
+		}
+		.form .group{          /*表单边框*/
+			padding: 1px 0;
+    		border: 1px solid #d5d5d5;
+    		border-radius: 5px;
+		}
+		.form .group .group-ipt{     /*表单内部边框*/
+			position: relative;
+    		margin: 0;
+			overflow: hidden;
+		}
+		.form .group .group-ipt input{    /*输入框*/
+			padding: 1em .8em;
+			width: 100%;
+			box-sizing: border-box;
+			border: 0;
+			border-radius: 0;
+			box-shadow: none;
+			background: rgba(255,255,255,0.5);
+			font-family: 'Microsoft Yahei';
+			color: #666;
+			position: relative;
+		}
+
+		#password,#verify,#user,#password1{   /*密码 确认密码 姓名*/
+			border-top: 1px solid #e8e8e8;
+		}
+		.imgcode{        /*图片验证码*/
+			width: 95px;
+			position: absolute;  /*规定元素的定位类型为绝对定位*/
+			right: 0;
+			top: 2px;
+			cursor: pointer;    /*定义了鼠标指针放在一个元素边界范围内时所用的光标形状:指示链接的指针（一只手）*/
+			height: 40px;
+		}
+		.button{                /*按钮*/
+			margin-top:18px;   /*规定按钮的上外边距*/
+		}
+		#button{
+			width: 100%;
+			background: #0f88eb;
+    		box-shadow: none;
+    		border: 0;
+    		border-radius: 6px;
+    		line-height: 41px;
+    		color: #fff;
+    		display: block;
+    		font-size: 15px;
+    		cursor: pointer;
+    		font-family: 'Microsoft Yahei';
+		}
+		#button:hover{        /* hover 选择器用于按钮上鼠标指针浮动*/
+			background: #80c3f7;
+		}
+		.remember{             /*记住密码*/
+			margin-top: 10px;
+			line-height: 30px;
+		}
+		.remember label{
+			display: block;
+		}
+		.remember-me{
+			font-size: 14px;
+			float: left;
+			position: relative;
+			cursor: pointer;
+		}
+		.icon{                    /*“记住我”的外方形框图标*/
+			width: 11px;
+			height: 11px;
+			display: block;
+			border: 1px solid #ccc;
+			float: left;
+			margin-top: 8px;
+			margin-right: 5px;
+			cursor: pointer;       /*规定鼠标指针放在方形框边界范围内要显示的光标的类型为：指示链接的指针（一只手）*/
+		}
+		.zt{            /*“记住我”的内方形*/
+			width: 9px;
+			height: 9px;
+			background: #0f88eb;
+			margin: 1px;
+			display: block;
+		}
+		#remember-me{     /*“记住我”*/
+			position: absolute;  /*规定元素的定位类型为绝对定位*/
+			left: 0;
+			top: 8px;
+			opacity: 0;
+			cursor: pointer;  /*规定鼠标指针放在方形框边界范围内要显示的光标的类型为：指示链接的指针（一只手）*/
+		}
+		.forgot-password{       /*忘记密码*/
+			float: right;
+			font-size: 14px;
+		}
+		.forgot-password a{
+			color: #555;
+		}
+		.forgot-password a:hover{      /*鼠标指针移到“忘记密码”显示样式:下划线*/
+			text-decoration: underline;
+		}
+		.footer{       /*页脚*/
+			position: fixed;  /*规定元素的定位类型为相对于浏览器的绝对定位*/
+			width: 100%;
+			height: 40px;
+			bottom: 0;
+			left: 0;
+			text-align: center;
+			color: #999;
+			z-index: 2;
+			padding-bottom: 10px;   /*设置元素的下内边距（底部空白）*/
+			font-size: 13px;
+		}
+		.footer a{     /*页脚-版权信息部分*/
+			color: #666;
+			text-decoration: underline;
+		}

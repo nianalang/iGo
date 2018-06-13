@@ -23,16 +23,16 @@ eclipse + MySQL
 ## 项目效果截图
 
 ### 首页：
-<img src="http://39.105.138.38:8080/iGo/function/index.png" width="80%" height="80%">
+<img src="http://39.105.138.38:8080/iGo/function/index.png" width="90%" height="90%">
 
 ### 购物车：
-<img src="http://39.105.138.38:8080/iGo/function/mycart.png" width="80%" height="80%">
+<img src="http://39.105.138.38:8080/iGo/function/mycart.png" width="90%" height="90%">
 
 ### 商品列表：
-<img src="http://39.105.138.38:8080/iGo/function/goodlist.png" width="80%" height="80%">
+<img src="http://39.105.138.38:8080/iGo/function/goodlist.png" width="90%" height="90%">
 
 ### 登陆：
-<img src="http://39.105.138.38:8080/iGo/function/login.png" width="80%" height="80%">
+<img src="http://39.105.138.38:8080/iGo/function/login.png" width="90%" height="90%">
 
 ### 已购买商品列表：
-<img src="http://39.105.138.38:8080/iGo/function/paygood.png" width="80%" height="80%">
+<img src="http://39.105.138.38:8080/iGo/function/paygood.png" width="90%" height="90%">
